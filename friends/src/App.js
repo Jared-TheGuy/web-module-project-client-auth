@@ -19,13 +19,13 @@ const newFriend = {
   email: 'foooook'
 }
 
-axios.post('http://localhost:5000/api/login', testUser)
-.then(resp => {
-  localStorage.setItem("token", resp.data.payload)
-})
-.catch(err => {
-  console.log(err)
-})
+// axios.post('http://localhost:5000/api/login', testUser)
+// .then(resp => {
+//   localStorage.setItem("token", resp.data.payload)
+// })
+// .catch(err => {
+//   console.log(err)
+// })
 
 const token = localStorage.getItem('token')
 
